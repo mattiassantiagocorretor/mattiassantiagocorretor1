@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mattias Santiago | Especialista em Financiamento de Imóveis</title>
+<meta name="description" content="Encontre o imóvel ideal no Ceará com Mattias Santiago, especialista em financiamento de imóveis.">
+<style>
+:root{--navy:#071a33;--blue:#0b376d;--gold:#c9a44a;--gold2:#e6c96b;--bg:#f5f7fb;--text:#142033;--muted:#64748b;--white:#fff;--line:#e3e8f0;--ok:#176b45;--bad:#a33b3b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.hero{background:radial-gradient(circle at 80% 20%,#164b88 0,#0a2b55 35%,#071a33 75%);color:white;padding:48px 20px 76px}
+.wrap{max-width:1100px;margin:auto}.brand{letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);font-weight:800;font-size:13px}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.03;margin:14px 0 16px;max-width:820px}.hero p{font-size:18px;line-height:1.6;max-width:720px;color:#dbe7f5}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.badge{border:1px solid rgba(255,255,255,.2);padding:9px 13px;border-radius:999px;background:rgba(255,255,255,.06);font-size:13px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 45px rgba(8,27,52,.10)}
+.formcard{margin:-42px auto 30px;padding:30px;position:relative;max-width:1000px}.steps{display:flex;gap:8px;margin-bottom:25px}.step{height:5px;flex:1;border-radius:9px;background:#e8edf3}.step.on{background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:8px}select,input{width:100%;padding:14px 15px;border:1px solid #d7dee8;border-radius:12px;background:#fff;font-size:15px;outline:none}select:focus,input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,164,74,.13)}
+.section-title{margin:4px 0 4px;font-size:25px}.section-sub{margin:0 0 22px;color:var(--muted);line-height:1.5}
+.actions{display:flex;gap:12px;justify-content:flex-end;margin-top:25px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:14px 20px;font-weight:800;cursor:pointer;font-size:15px}.primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#10213a}.secondary{background:#eef3f8;color:#15345d}
+.result{display:none;margin-top:25px;padding:24px;border-radius:18px;background:#f8fafc;border:1px solid var(--line)}.result.show{display:block}.result h3{margin:0 0 8px}.price{font-size:28px;font-weight:900;color:var(--blue)}.recommend{padding:16px;background:#fff;border:1px solid #e7dfc4;border-left:5px solid var(--gold);border-radius:14px;margin-top:16px}
+.warn{padding:15px;border-radius:13px;margin-top:14px;background:#fff3f3;color:var(--bad);border:1px solid #f0caca}.good{padding:15px;border-radius:13px;margin-top:14px;background:#eefaf4;color:var(--ok);border:1px solid #cde9da}
+.whatsapp{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.info{max-width:1000px;margin:30px auto;padding:0 20px 55px}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.info .card{padding:22px}.info h2{font-size:30px}.info h3{margin-top:0}.muted{color:var(--muted);line-height:1.6}
+.source{font-size:12px;color:#718096;margin-top:12px}.footer{background:var(--navy);color:#d9e4f2;padding:30px 20px}.footer small{display:block;max-width:1000px;margin:auto;line-height:1.6}
+@media(max-width:720px){.grid,.info-grid{grid-template-columns:1fr}.full{grid-column:auto}.formcard{margin:-35px 14px 25px;padding:21px}.hero{padding-top:35px}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="wrap">
+<div class="brand">Mattias Santiago • Corretor de Imóveis</div>
+<h1>Seu próximo imóvel começa com uma escolha inteligente.</h1>
+<p>Conte o que você procura. Eu cruzo seu perfil, região, tamanho, entrada e renda para identificar as opções mais coerentes dentro do mercado imobiliário do Ceará.</p>
+<div class="badges">
+<span class="badge">Especialista em financiamento de imóveis</span>
+<span class="badge">Fortaleza + Região Metropolitana</span>
+<span class="badge">Atendimento personalizado</span>
+</div>
+</div>
+</header>
+
+<main>
+<section class="card formcard">
+<div class="steps"><span class="step on"></span><span class="step on"></span><span class="step on"></span><span class="step on"></span></div>
+<h2 class="section-title">Vamos encontrar o imóvel certo para você</h2>
+<p class="section-sub">Quanto mais precisas forem as informações, melhor será a seleção. Você não está fazendo uma proposta nem uma análise de crédito automática.</p>
+
+<form id="leadForm">
+<div class="grid">
+<div>
+<label for="nome">Seu nome</label>
+<input id="nome" required placeholder="Como posso te chamar?">
+</div>
+<div>
+<label for="tipo">Tipo de imóvel</label>
+<select id="tipo" required><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Lote</option></select>
+</div>
+<div>
+<label for="regiao">Região / município no Ceará</label>
+<select id="regiao" required>
+<option value="">Selecione</option>
+<option>Fortaleza</option><option>Caucaia</option><option>Eusébio</option><option>Maracanaú</option><option>Aquiraz</option><option>Pacatuba</option><option>Maranguape</option><option>Itaitinga</option><option>Outra região do Ceará</option>
+</select>
+</div>
+<div>
+<label for="tamanho">Tamanho desejado</label>
+<select id="tamanho"><option value="0">Tanto faz</option><option value="35">Até 35 m²</option><option value="45">Até 45 m²</option><option value="50">Até 50 m²</option><option value="60">Até 60 m²</option><option value="70">Até 70 m²</option><option value="80">Até 80 m²</option><option value="100">Até 100 m²</option><option value="120">Até 120 m²</option><option value="150">Até 150 m²</option><option value="200">Até 200 m²</option></select>
+</div>
+<div>
+<label for="entrada">Entrada disponível</label>
+<select id="entrada"><option value="0">R$ 0</option><option value="5000">Até R$ 5 mil</option><option value="10000">Até R$ 10 mil</option><option value="20000">Até R$ 20 mil</option><option value="30000">Até R$ 30 mil</option><option value="50000">Até R$ 50 mil</option><option value="75000">Até R$ 75 mil</option><option value="100000">Até R$ 100 mil</option><option value="150000">Até R$ 150 mil</option><option value="200000">Até R$ 200 mil</option></select>
+</div>
+<div>
+<label for="renda">Renda mensal aproximada</label>
+<select id="renda">
+<option value="1900">R$ 1.900 a R$ 2.999</option><option value="3000">R$ 3.000 a R$ 3.999</option><option value="4000">R$ 4.000 a R$ 4.999</option><option value="5000">R$ 5.000 a R$ 5.999</option><option value="6000">R$ 6.000 a R$ 7.999</option><option value="8000">R$ 8.000 a R$ 9.999</option><option value="10000">R$ 10.000 a R$ 14.999</option><option value="15000">R$ 15.000 a R$ 19.999</option><option value="20000">R$ 20.000 a R$ 29.999</option><option value="30000">R$ 30.000 a R$ 49.999</option><option value="50000">R$ 50.000 a R$ 99.999</option><option value="100000">R$ 100.000+</option>
+</select>
+</div>
+<div class="full">
+<label for="faixa">Faixa de valor que você gostaria de investir</label>
+<select id="faixa"><option value="">Ainda não sei</option><option value="200000">Até R$ 200 mil</option><option value="250000">Até R$ 250 mil</option><option value="300000">Até R$ 300 mil</option><option value="400000">Até R$ 400 mil</option><option value="500000">Até R$ 500 mil</option><option value="700000">Até R$ 700 mil</option><option value="1000000">Até R$ 1 milhão</option><option value="1500000">Até R$ 1,5 milhão</option><option value="2000000">Até R$ 2 milhões</option><option value="3000000">Acima de R$ 2 milhões</option></select>
+</div>
+</div>
+<div class="actions"><button type="button" class="btn secondary" onclick="resetForm()">Limpar</button><button class="btn primary" type="submit">Encontrar opções para mim</button></div>
+</form>
+
+<div id="result" class="result"></div>
+</section>
+
+<section class="info">
+<h2>Por que este formulário existe?</h2>
+<div class="info-grid">
+<div class="card"><h3>🎯 Personalizado</h3><p class="muted">Ele transforma suas respostas em um perfil de compra para que eu não desperdice seu tempo com imóveis fora do que você procura.</p></div>
+<div class="card"><h3>🔎 Transparente</h3><p class="muted">Quando a faixa de preço escolhida não conversa com a região, metragem ou padrão desejado, o sistema avisa em vez de criar uma expectativa falsa.</p></div>
+<div class="card"><h3>🔐 Seguro</h3><p class="muted">O formulário não pede senha bancária, cartão, CPF ou documentos. Os dados enviados ao WhatsApp são somente os necessários para eu entender sua busca.</p></div>
+</div>
+<div class="card" style="padding:22px;margin-top:16px">
+<h3>Como os valores são tratados</h3>
+<p class="muted">Os números exibidos aqui são referências de mercado e exemplos de ofertas públicas, não promessa de preço ou financiamento. Tabelas, estoque, subsídios, juros e condições das construtoras podem mudar sem aviso. Antes de apresentar uma proposta, eu confirmo a unidade e a condição comercial vigente.</p>
+<p class="source"><strong>Referências consultadas:</strong> DataZAP 2026 (lançamentos de 2025 em Fortaleza), páginas oficiais de MRV, Direcional, CR Duarte e Teradela, além de anúncios públicos de lançamentos. O benchmark econômico de Fortaleza usado no cálculo é de R$ 6.577/m²; médio-alto R$ 12.934/m²; luxo R$ 15.443/m². Fontes: DataZAP 2026; MRV; Direcional; CR Duarte; Teradela.</p>
+</div>
+</section>
+</main>
+
+<footer class="footer"><small>Mattias Santiago • Corretor de Imóveis • Especialista em financiamento de imóveis<br>Atendimento em Fortaleza e Região Metropolitana — Ceará. Este site é uma ferramenta de pré-atendimento e não substitui análise de crédito, proposta formal, tabela de vendas ou aprovação da instituição financeira.</small></footer>
+
+<script>
+const WHATS="558589669595";
+const fmt=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+function faixaRenda(v){const map={1900:"R$ 1.900 a R$ 2.999",3000:"R$ 3.000 a R$ 3.999",4000:"R$ 4.000 a R$ 4.999",5000:"R$ 5.000 a R$ 5.999",6000:"R$ 6.000 a R$ 7.999",8000:"R$ 8.000 a R$ 9.999",10000:"R$ 10.000 a R$ 14.999",15000:"R$ 15.000 a R$ 19.999",20000:"R$ 20.000 a R$ 29.999",30000:"R$ 30.000 a R$ 49.999",50000:"R$ 50.000 a R$ 99.999",100000:"R$ 100.000+"};return map[v]}
+function estimate(tipo,regiao,tamanho){
+  if(!tamanho) return null;
+  let m2=6577;
+  if(regiao==="Fortaleza"){
+    if(tipo==="Casa"||tipo==="Lote") m2=7000;
+    else m2=6577;
+    if(tamanho>=80)m2=12934;
+  }else{
+    m2=tipo==="Apartamento"?5600:5200;
+    if(tamanho>=100)m2=8500;
+  }
+  return Math.round(m2*tamanho);
+}
+function builder(t,reg,price){
+  if(t==="Apartamento" && price && price<=420000){
+    if(reg==="Fortaleza") return "Prioridade de pesquisa: MRV, Direcional, Tenda, Victa, Teradela e outras opções compatíveis.";
+    return "Prioridade de pesquisa: Tenda, Direcional, MRV e construtoras com estoque ativo na região.";
+  }
+  if(reg==="Eusébio" && (t==="Casa"||t==="Lote")) return "Vale comparar oportunidades horizontais no Eusébio e municípios próximos.";
+  return "Vou comparar as construtoras e empreendimentos ativos na sua região antes de apresentar uma proposta.";
+}
+document.getElementById('leadForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const nome=document.getElementById('nome').value.trim(), tipo=document.getElementById('tipo').value, reg=document.getElementById('regiao').value;
+ const tam=+document.getElementById('tamanho').value, entrada=+document.getElementById('entrada').value, renda=+document.getElementById('renda').value;
+ const faixa=document.getElementById('faixa').value?+document.getElementById('faixa').value:null;
+ const est=estimate(tipo,reg,tam);
+ let msg="", className="good";
+ if(est && faixa && faixa<est){msg=`Atenção: pela referência de mercado usada no formulário, ${fmt(faixa)} tende a ficar abaixo de uma estimativa de ${fmt(est)} para ${tam} m² em ${reg}. Isso não significa que seja impossível: podemos procurar unidades menores, condições promocionais ou outra região.`;className="warn";}
+ else if(est){msg=`Referência inicial: aproximadamente ${fmt(est)} para ${tam} m². A unidade real pode variar bastante conforme localização, andar, vaga, padrão, fase de obra e condição comercial.`;}
+ else msg="Vou trabalhar com sua faixa de preferência e confirmar os valores reais das oportunidades disponíveis.";
+ const recommendation=builder(tipo,reg,est);
+ const result=document.getElementById('result');
+ result.innerHTML=`<h3>Seu perfil foi organizado, ${nome}.</h3><div class="${className}">${msg}</div><div class="recommend"><strong>Próximo passo:</strong><br>${recommendation}<br><br><strong>Posso te enviar uma proposta personalizada.</strong> Ela será montada depois de conferir disponibilidade e condições vigentes.</div><div class="actions"><a class="btn primary whatsapp" target="_blank" href="${waLink(nome,tipo,reg,tam,entrada,renda,faixa,est)}">Enviar meu perfil pelo WhatsApp</a></div>`;
+ result.classList.add('show'); result.scrollIntoView({behavior:'smooth',block:'center'});
+});
+function waLink(nome,tipo,reg,tam,entrada,renda,faixa,est){
+ const txt=`Olá, Mattias! Preenchi seu formulário de busca de imóvel.%0A%0A*Meu perfil:*%0ANome: ${nome}%0ATipo: ${tipo}%0ARegião: ${reg}%0ATamanho: ${tam?tam+' m²':'Tanto faz'}%0AEntrada disponível: ${fmt(entrada)}%0ARenda mensal: ${faixaRenda(renda)}%0AFaixa de valor desejada: ${faixa?fmt(faixa):'Ainda não sei'}%0AReferência calculada: ${est?fmt(est):'A definir'}%0A%0AQuero receber uma proposta com as melhores opções compatíveis com meu perfil.`;
+ return `https://wa.me/${WHATS}?text=${txt}`;
+}
+function resetForm(){document.getElementById('leadForm').reset();document.getElementById('result').classList.remove('show')}
+</script>
+</body>
+</html>
